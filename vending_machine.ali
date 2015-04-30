@@ -5,12 +5,14 @@ P ZX
 RN
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
 
-U vending_machine%b	vending_machine.adb	a7c6420a NE OO PK
+U vending_machine%b	vending_machine.adb	fe0a68d2 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
 
-U vending_machine%s	vending_machine.ads	0310c2d2 EE NE OO PK IL
+U vending_machine%s	vending_machine.ads	12208cc5 EE NE OO PK IL
 W ada.tags%s		a-tags.adb		a-tags.ali
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
@@ -40,19 +42,26 @@ D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
 D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
-D vending_machine.ads	20150430020236 0310c2d2 vending_machine%s
-D vending_machine.adb	20150430020230 9cbb750c vending_machine%b
+D vending_machine.ads	20150430023448 12208cc5 vending_machine%s
+D vending_machine.adb	20150430023448 d44711c3 vending_machine%b
 X 1 ada.ads
 16K9*Ada 19e8 29|1r6
 X 7 a-textio.ads
 49K13*Text_IO 471e16 29|1w10
 X 28 vending_machine.ads
-3K9*vending_machine 10l5 10e20 29|4b14 11l5 11t20
-5E9*Coin_Type 5e52 7r36 29|6r36
-5n23*Penny{5E9} 29|8r22
+3K9*vending_machine 14l5 14e20 29|5b14 23l5 23t20
+5E9*Coin_Type 5e52 8r36 29|7r36
+5n23*Penny{5E9} 29|9r22
 5n30*Nickel{5E9}
 5n38*Dime{5E9}
 5n44*Quarter{5E9}
-7V13*Accept_Coin{boolean} 7>26 29|6b13 9l8 9t19
-7e26 Coin{5E9} 29|6b26 8r14
+6E9*Product_Type 6e45 11r42 29|12r42
+6n26*Cola{6E9} 29|16r12
+6n32*Chips{6E9}
+6n39*Candy{6E9}
+8V13*Accept_Coin{boolean} 8>26 29|7b13 10l8 10t19
+8e26 Coin{5E9} 29|7b26 9r14
+11V13*Select_Product{boolean} 11>29 12>29 29|12b13 21l8 21t22
+11e29 Product{6E9} 29|12b29 15r12
+12i29 Money{integer} 29|13b29 17r17
 

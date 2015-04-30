@@ -1,4 +1,4 @@
-with vending_machine;
+with vending_machine; use vending_machine;
 with Ada.Text_IO; use Ada.Text_IO;
 -- Author : Syth Ryan
 package body Vending_Machine_Test_Procedures is
@@ -6,7 +6,7 @@ package body Vending_Machine_Test_Procedures is
    procedure passAPennyToAcceptCoinShouldReturnFalse is
 
    begin
-      if (vending_machine.Accept_Coin(vending_machine.Penny)) then
+      if (Accept_Coin(Penny)) then
          Put_Line("- FAILD: passAPennyToAcceptCoinShouldReturnFalse");
       else
          Put_Line("+ PASSED: passAPennyToAcceptCoinShouldReturnFalse");
@@ -23,6 +23,15 @@ package body Vending_Machine_Test_Procedures is
       end if;
    end passANickelToAcceptCoinShouldReturnTrue;
    -------------------------------------------------------
+
+   procedure passOneDollarAndColaToSelectProductShouldReturnTrue is
+   begin
+      if (Select_Product(Product => Cola, Money => 100)) then
+         Put_Line("+ PASSED: passOneDollarAndColaToSelectProductShouldReturnTrue");
+      else
+         Put_Line("- FAILD: passOneDollarAndColaToSelectProductShouldReturnTrue");
+      end if;
+   end passOneDollarAndColaToSelectProductShouldReturnTrue;
 
 
 end Vending_Machine_Test_Procedures;

@@ -5,6 +5,10 @@ with Vending_Machine_Test_Procedures; use Vending_Machine_Test_Procedures;
 procedure Vending_Machine_Test is
 
 begin
+   -- Accept Coin
    passAPennyToAcceptCoinShouldReturnFalse;
    passANickelToAcceptCoinShouldReturnTrue;
+
+   -- Select Product
+   passOneDollarAndColaToSelectProductShouldReturnTrue;
 end Vending_Machine_Test;
