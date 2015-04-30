@@ -1,0 +1,7 @@
+project KataVendingMachine is
+
+   for Source_Dirs use ("./**");
+   for Main use ("vending_machine_test.adb");
+
+end KataVendingMachine;
+
