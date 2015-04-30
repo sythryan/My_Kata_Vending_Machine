@@ -6,4 +6,5 @@ procedure Vending_Machine_Test is
 
 begin
    passOneToAcceptCoinShouldReturnFalse;
+   passFiveToAcceptCoinShouldReturnTrue;
 end Vending_Machine_Test;

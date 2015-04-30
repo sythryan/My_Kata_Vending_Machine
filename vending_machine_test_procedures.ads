@@ -2,7 +2,9 @@
 
 package Vending_Machine_Test_Procedures is
 
+   -- Print out a message whether the test passed
+
    procedure passOneToAcceptCoinShouldReturnFalse;
-   -- Prints out a message whether the test passed
+   procedure passFiveToAcceptCoinShouldReturnTrue;
 
 end Vending_Machine_Test_Procedures;
