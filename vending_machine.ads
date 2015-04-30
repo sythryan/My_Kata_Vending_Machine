@@ -10,5 +10,6 @@ package vending_machine is
 
    function Select_Product (Product : in Product_Type;
                             Money   : in Integer ) return Boolean;
+   -- Returns Whether Product Was Purchased
 
 end vending_machine;

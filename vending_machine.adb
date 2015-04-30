@@ -15,6 +15,8 @@ package body Vending_Machine is
       case Product is
       when Cola =>
          return Money >= 100; -- $1.00
+      when Chips =>
+         return Money >= 50;  -- $0.50
       when others =>
          return False;
       end case;
