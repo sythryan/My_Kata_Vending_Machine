@@ -17,8 +17,8 @@ package body Vending_Machine is
          return Money >= 100; -- $1.00
       when Chips =>
          return Money >= 50;  -- $0.50
-      when others =>
-         return False;
+      when Candy =>
+         return Money >= 65;  -- $0.65
       end case;
    end Select_Product;
 

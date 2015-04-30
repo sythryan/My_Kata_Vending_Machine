@@ -7,7 +7,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vending_machine%b	vending_machine.adb	6f2ca053 NE OO PK
+U vending_machine%b	vending_machine.adb	deca14b8 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W interfaces%s		interfac.ads		interfac.ali
@@ -43,7 +43,7 @@ D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
 D vending_machine.ads	20150430025244 12208cc5 vending_machine%s
-D vending_machine.adb	20150430025546 4561d942 vending_machine%b
+D vending_machine.adb	20150430031434 f4876da9 vending_machine%b
 X 1 ada.ads
 16K9*Ada 19e8 29|1r6
 X 7 a-textio.ads
@@ -58,10 +58,10 @@ X 28 vending_machine.ads
 6E9*Product_Type 6e45 11r42 29|12r42
 6n26*Cola{6E9} 29|16r12
 6n32*Chips{6E9} 29|18r12
-6n39*Candy{6E9}
+6n39*Candy{6E9} 29|20r12
 8V13*Accept_Coin{boolean} 8>26 29|7b13 10l8 10t19
 8e26 Coin{5E9} 29|7b26 9r14
 11V13*Select_Product{boolean} 11>29 12>29 29|12b13 23l8 23t22
 11e29 Product{6E9} 29|12b29 15r12
-12i29 Money{integer} 29|13b29 17r17 19r17
+12i29 Money{integer} 29|13b29 17r17 19r17 21r17
 
