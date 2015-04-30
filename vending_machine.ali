@@ -42,8 +42,8 @@ D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
 D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
-D vending_machine.ads	20150430023448 12208cc5 vending_machine%s
-D vending_machine.adb	20150430023448 d44711c3 vending_machine%b
+D vending_machine.ads	20150430023744 12208cc5 vending_machine%s
+D vending_machine.adb	20150430023744 d44711c3 vending_machine%b
 X 1 ada.ads
 16K9*Ada 19e8 29|1r6
 X 7 a-textio.ads

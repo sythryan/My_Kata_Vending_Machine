@@ -10,6 +10,6 @@ package Vending_Machine_Test_Procedures is
 
    -- Select Product
    procedure passOneDollarAndColaToSelectProductShouldReturnTrue;
-
+   procedure passFiveCentsAndColaToSelectProductShouldReturnFalse;
 
 end Vending_Machine_Test_Procedures;

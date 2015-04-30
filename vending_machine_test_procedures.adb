@@ -32,6 +32,18 @@ package body Vending_Machine_Test_Procedures is
          Put_Line("- FAILD: passOneDollarAndColaToSelectProductShouldReturnTrue");
       end if;
    end passOneDollarAndColaToSelectProductShouldReturnTrue;
+   ------------------------------------------------------
+
+   procedure passFiveCentsAndColaToSelectProductShouldReturnFalse is
+   begin
+      if (Select_Product(Product => Cola, Money => 5)) then
+         Put_Line("- FAILD: passFiveCentsAndColaToSelectProductShouldReturnFalse");
+      else
+         Put_Line("+ PASSED: passFiveCentsAndColaToSelectProductShouldReturnFalse");
+      end if;
+   end passFiveCentsAndColaToSelectProductShouldReturnFalse;
+
+
 
 
 end Vending_Machine_Test_Procedures;
