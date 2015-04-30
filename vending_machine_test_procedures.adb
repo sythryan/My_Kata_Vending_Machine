@@ -3,25 +3,25 @@ with Ada.Text_IO; use Ada.Text_IO;
 -- Author : Syth Ryan
 package body Vending_Machine_Test_Procedures is
 
-   procedure passOneToAcceptCoinShouldReturnFalse is
+   procedure passAPennyToAcceptCoinShouldReturnFalse is
 
    begin
-      if (vending_machine.Accept_Coin(1)) then
-         Put_Line("- FAILD: passOneToAcceptCoinShouldReturnFalse");
+      if (vending_machine.Accept_Coin(vending_machine.Penny)) then
+         Put_Line("- FAILD: passAPennyToAcceptCoinShouldReturnFalse");
       else
-         Put_Line("+ PASSED: passOneToAcceptCoinShouldReturnFalse");
+         Put_Line("+ PASSED: passAPennyToAcceptCoinShouldReturnFalse");
       end if;
-   end passOneToAcceptCoinShouldReturnFalse;
+   end passAPennyToAcceptCoinShouldReturnFalse;
    -------------------------------------------------------
 
-   procedure passFiveToAcceptCoinShouldReturnTrue is
+   procedure passANickelToAcceptCoinShouldReturnTrue is
    begin
-      if (vending_machine.Accept_Coin(5)) then
-         Put_Line("+ PASSED: passFiveToAcceptCoinShouldReturnTrue");
+      if (vending_machine.Accept_Coin(vending_machine.Nickel)) then
+         Put_Line("+ PASSED: passANickelToAcceptCoinShouldReturnTrue");
       else
-         Put_Line("- FAILD: passFiveToAcceptCoinShouldReturnTrue");
+         Put_Line("- FAILD: passANickelToAcceptCoinShouldReturnTrue");
       end if;
-   end passFiveToAcceptCoinShouldReturnTrue;
+   end passANickelToAcceptCoinShouldReturnTrue;
    -------------------------------------------------------
 
 

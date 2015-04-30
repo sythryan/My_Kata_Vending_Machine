@@ -7,12 +7,12 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vending_machine_test_procedures%b  vending_machine_test_procedures.adb  d73c7967 NE OO PK
+U vending_machine_test_procedures%b  vending_machine_test_procedures.adb  1d8c39b3 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W vending_machine%s	vending_machine.adb	vending_machine.ali
 
-U vending_machine_test_procedures%s  vending_machine_test_procedures.ads  9607d5d4 EE NE OO PK
+U vending_machine_test_procedures%s  vending_machine_test_procedures.ads  4fafa99b EE NE OO PK
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
 D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
@@ -41,19 +41,21 @@ D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
 D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
-D vending_machine.ads	20150430013514 51806e53 vending_machine%s
-D vending_machine_test_procedures.ads  20150430015826 9607d5d4 vending_machine_test_procedures%s
-D vending_machine_test_procedures.adb  20150430015830 28d63734 vending_machine_test_procedures%b
+D vending_machine.ads	20150430020236 0310c2d2 vending_machine%s
+D vending_machine_test_procedures.ads  20150430020352 4fafa99b vending_machine_test_procedures%s
+D vending_machine_test_procedures.adb  20150430020414 695ea72e vending_machine_test_procedures%b
 X 1 ada.ads
 16K9*Ada 19e8 30|2r6 2r23
 X 7 a-textio.ads
 49K13*Text_IO 471e16 30|2w10 2r27
 263U14*Put_Line 30|10s10 12s10 20s10 22s10
 X 28 vending_machine.ads
-3K9*vending_machine 8e20 30|1w6 9r11 19r11
-5V13*Accept_Coin{boolean} 30|9s27 19s27
+3K9*vending_machine 10e20 30|1w6 9r11 9r39 19r11 19r39
+5n23*Penny{5E9} 30|9r55
+5n30*Nickel{5E9} 30|19r55
+7V13*Accept_Coin{boolean} 30|9s27 19s27
 X 29 vending_machine_test_procedures.ads
 3K9*Vending_Machine_Test_Procedures 10l5 10e36 30|4b14 28l5 28t36
-7U14*passOneToAcceptCoinShouldReturnFalse 30|6b14 14l8 14t44
-8U14*passFiveToAcceptCoinShouldReturnTrue 30|17b14 24l8 24t44
+7U14*passAPennyToAcceptCoinShouldReturnFalse 30|6b14 14l8 14t47
+8U14*passANickelToAcceptCoinShouldReturnTrue 30|17b14 24l8 24t47
 

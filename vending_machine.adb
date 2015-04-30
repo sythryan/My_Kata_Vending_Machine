@@ -3,9 +3,9 @@ with Ada.Text_IO;
 
 package body Vending_Machine is
 
-   function Accept_Coin (Coin : in Integer) return Boolean is
+   function Accept_Coin (Coin : in Coin_Type) return Boolean is
    begin
-      return coin /= 1;
+      return coin /= Penny;
    end Accept_Coin;
 
 end Vending_Machine;

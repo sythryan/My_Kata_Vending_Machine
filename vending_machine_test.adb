@@ -5,6 +5,6 @@ with Vending_Machine_Test_Procedures; use Vending_Machine_Test_Procedures;
 procedure Vending_Machine_Test is
 
 begin
-   passOneToAcceptCoinShouldReturnFalse;
-   passFiveToAcceptCoinShouldReturnTrue;
+   passAPennyToAcceptCoinShouldReturnFalse;
+   passANickelToAcceptCoinShouldReturnTrue;
 end Vending_Machine_Test;
