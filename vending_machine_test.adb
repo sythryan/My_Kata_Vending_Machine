@@ -13,4 +13,5 @@ begin
    passOneDollarAndColaToSelectProductShouldReturnTrue;
    passFiveCentsAndColaToSelectProductShouldReturnFalse;
    passFiftyCentsAndChipsToSelectProductShouldReturnTrue;
+   passTenCentsAndChipsToSelectProductShouldReturnFalse;
 end Vending_Machine_Test;

@@ -6,10 +6,10 @@ package body Vending_Machine_Test_Procedures is
    procedure passAPennyToAcceptCoinShouldReturnFalse is
 
    begin
-      if (Accept_Coin(Penny)) then
-         Put_Line("- FAILD: passAPennyToAcceptCoinShouldReturnFalse");
-      else
+      if not (Accept_Coin(Penny)) then
          Put_Line("+ PASSED: passAPennyToAcceptCoinShouldReturnFalse");
+      else
+         Put_Line("- FAILD: passAPennyToAcceptCoinShouldReturnFalse");
       end if;
    end passAPennyToAcceptCoinShouldReturnFalse;
    -------------------------------------------------------
@@ -36,10 +36,10 @@ package body Vending_Machine_Test_Procedures is
 
    procedure passFiveCentsAndColaToSelectProductShouldReturnFalse is
    begin
-      if (Select_Product(Product => Cola, Money => 5)) then
-         Put_Line("- FAILD: passFiveCentsAndColaToSelectProductShouldReturnFalse");
-      else
+      if not (Select_Product(Product => Cola, Money => 5)) then
          Put_Line("+ PASSED: passFiveCentsAndColaToSelectProductShouldReturnFalse");
+      else
+         Put_Line("- FAILD: passFiveCentsAndColaToSelectProductShouldReturnFalse");
       end if;
    end passFiveCentsAndColaToSelectProductShouldReturnFalse;
    ------------------------------------------------------
@@ -52,7 +52,16 @@ package body Vending_Machine_Test_Procedures is
          Put_Line("- FAILD: passFiftyCentsAndChipsToSelectProductShouldReturnTrue");
       end if;
    end passFiftyCentsAndChipsToSelectProductShouldReturnTrue;
+   ------------------------------------------------------
 
+   procedure passTenCentsAndChipsToSelectProductShouldReturnFalse is
+   begin
+      if not (Select_Product(Product => Chips, Money => 10)) then
+         Put_Line("+ PASSED: passTenCentsAndChipsToSelectProductShouldReturnFalse");
+      else
+         Put_Line("- FAILD: passTenCentsAndChipsToSelectProductShouldReturnFalse");
+      end if;
+   end passTenCentsAndChipsToSelectProductShouldReturnFalse;
 
 
 end Vending_Machine_Test_Procedures;
