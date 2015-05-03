@@ -16,4 +16,7 @@ begin
    passTenCentsAndChipsToSelectProductShouldReturnFalse;
    passOneDollarAndCandyToSelectProductShouldReturnTrue;
    passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse;
+
+   -- Make Change
+   passTwoDollarsAndOneDollarCostShouldReturn100;
 end Vending_Machine_Test;

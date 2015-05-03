@@ -18,4 +18,7 @@ package Vending_Machine_Test_Procedures is
    procedure passOneDollarAndCandyToSelectProductShouldReturnTrue;
    procedure passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse;
 
+   -- Make Change
+   procedure passTwoDollarsAndOneDollarCostShouldReturn100;
+
 end Vending_Machine_Test_Procedures;

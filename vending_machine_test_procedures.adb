@@ -83,5 +83,15 @@ package body Vending_Machine_Test_Procedures is
       end if;
    end passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse;
 
+   ------------------------------------------------------
+
+   procedure passTwoDollarsAndOneDollarCostShouldReturn100 is
+   begin
+      if (Make_Change(Money =>200, Cost=>100) = 100) then
+         Put_Line("+ PASSED: passTwoDollarsAndOneDollarCostShouldReturn100");
+      else
+         Put_Line("- FAILD: passTwoDollarsAndOneDollarCostShouldReturn100");
+      end if;
+   end passTwoDollarsAndOneDollarCostShouldReturn100;
 
 end Vending_Machine_Test_Procedures;

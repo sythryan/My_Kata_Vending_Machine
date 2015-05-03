@@ -8,9 +8,10 @@ package body Vending_Machine is
    begin
       return coin /= Penny;
    end Accept_Coin;
+   ----------------------------------------------------
 
    function Select_Product (Product : in Product_Type;
-                            Money   : in Integer) return Boolean is
+                            Money   : in Natural) return Boolean is
    begin
       case Product is
       when Cola =>
@@ -21,5 +22,12 @@ package body Vending_Machine is
          return Money >= 65;  -- $0.65
       end case;
    end Select_Product;
+   ----------------------------------------------------
 
+   function Make_Change(Money : in Natural;
+                        Cost  : in Natural) return Natural is
+   begin
+      return Money - Cost;
+   end;
+   ----------------------------------------------------
 end Vending_Machine;

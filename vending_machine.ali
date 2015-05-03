@@ -7,12 +7,12 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vending_machine%b	vending_machine.adb	deca14b8 NE OO PK
+U vending_machine%b	vending_machine.adb	6a926e1f NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W interfaces%s		interfac.ads		interfac.ali
 
-U vending_machine%s	vending_machine.ads	12208cc5 EE NE OO PK IL
+U vending_machine%s	vending_machine.ads	257b4834 EE NE OO PK IL
 W ada.tags%s		a-tags.adb		a-tags.ali
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
@@ -42,26 +42,29 @@ D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
 D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
-D vending_machine.ads	20150430025244 12208cc5 vending_machine%s
-D vending_machine.adb	20150430031434 f4876da9 vending_machine%b
+D vending_machine.ads	20150503233138 257b4834 vending_machine%s
+D vending_machine.adb	20150503232732 7784d3ff vending_machine%b
 X 1 ada.ads
 16K9*Ada 19e8 29|1r6
 X 7 a-textio.ads
 49K13*Text_IO 471e16 29|1w10
 X 28 vending_machine.ads
-3K9*vending_machine 15l5 15e20 29|5b14 25l5 25t20
-5E9*Coin_Type 5e52 8r36 29|7r36
-5n23*Penny{5E9} 29|9r22
-5n30*Nickel{5E9}
-5n38*Dime{5E9}
-5n44*Quarter{5E9}
-6E9*Product_Type 6e45 11r42 29|12r42
-6n26*Cola{6E9} 29|16r12
-6n32*Chips{6E9} 29|18r12
-6n39*Candy{6E9} 29|20r12
-8V13*Accept_Coin{boolean} 8>26 29|7b13 10l8 10t19
-8e26 Coin{5E9} 29|7b26 9r14
-11V13*Select_Product{boolean} 11>29 12>29 29|12b13 23l8 23t22
-11e29 Product{6E9} 29|12b29 15r12
-12i29 Money{integer} 29|13b29 17r17 19r17 21r17
+5K9*vending_machine 22l5 22e20 29|5b14 33l5 33t20
+7E9*Coin_Type 7e52 10r36 29|7r36
+7n23*Penny{7E9} 29|9r22
+7n30*Nickel{7E9}
+7n38*Dime{7E9}
+7n44*Quarter{7E9}
+8E9*Product_Type 8e45 13r42 29|13r42
+8n26*Cola{8E9} 29|17r12
+8n32*Chips{8E9} 29|19r12
+8n39*Candy{8E9} 29|21r12
+10V13*Accept_Coin{boolean} 10>26 29|7b13 10l8 10t19
+10e26 Coin{7E9} 29|7b26 9r14
+13V13*Select_Product{boolean} 13>29 14>29 29|13b13 24l8 24t22
+13e29 Product{8E9} 29|13b29 16r12
+14i29 Money{natural} 29|14b29 18r17 20r17 22r17
+17V13*Make_Change{natural} 17>26 18>26 29|27b13 31t7
+17i26 Money{natural} 29|27b25 30r14
+18i26 Cost{natural} 29|28b25 30r22
 
