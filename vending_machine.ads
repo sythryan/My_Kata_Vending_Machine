@@ -5,6 +5,7 @@
 package vending_machine is
 
    type Coin_Type is (Penny, Nickel, Dime, Quarter);
+   type Coin_Array is array (Natural range <>) of Coin_Type;
    type Product_Type is (Cola, Chips, Candy);
 
    function Accept_Coin (Coin : in Coin_Type) return Boolean;
@@ -18,5 +19,9 @@ package vending_machine is
                          Cost  : in Natural) return Natural;
    -- Returns change difference
    -- Will Throw an unhandled error if Cost is greater than Money
+
+   function Return_Coins (Money : in Natural;
+                          Cost  : in Natural) return Coin_Array;
+   -- Returns an array of coins to be returned to the user
 
 end vending_machine;

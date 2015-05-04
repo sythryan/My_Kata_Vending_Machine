@@ -18,5 +18,8 @@ begin
    passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse;
 
    -- Make Change
-   passTwoDollarsAndOneDollarCostShouldReturn100;
+   passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100;
+
+   -- Return Coins
+   passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters;
 end Vending_Machine_Test;

@@ -3,6 +3,8 @@ with Ada.Text_IO; use Ada.Text_IO;
 -- Author : Syth Ryan
 package body Vending_Machine_Test_Procedures is
 
+   Four_Quarters : constant Coin_Array(1..4) := (Quarter,Quarter,Quarter,Quarter);
+
    procedure passAPennyToAcceptCoinShouldReturnFalse is
 
    begin
@@ -82,16 +84,26 @@ package body Vending_Machine_Test_Procedures is
          Put_Line("- FAILD: passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse");
       end if;
    end passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse;
-
    ------------------------------------------------------
 
-   procedure passTwoDollarsAndOneDollarCostShouldReturn100 is
+   procedure passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100 is
    begin
       if (Make_Change(Money =>200, Cost=>100) = 100) then
-         Put_Line("+ PASSED: passTwoDollarsAndOneDollarCostShouldReturn100");
+         Put_Line("+ PASSED: passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100");
       else
-         Put_Line("- FAILD: passTwoDollarsAndOneDollarCostShouldReturn100");
+         Put_Line("- FAILD: passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100");
       end if;
-   end passTwoDollarsAndOneDollarCostShouldReturn100;
+   end passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100;
+   ------------------------------------------------------
+
+
+   procedure passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters is
+   begin
+      if (Return_Coins(Money =>100, Cost=>0) = Four_Quarters) then
+         Put_Line("+ PASSED: passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters");
+      else
+         Put_Line("- FAILD: passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters");
+      end if;
+   end passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters;
 
 end Vending_Machine_Test_Procedures;

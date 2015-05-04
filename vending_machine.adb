@@ -24,10 +24,31 @@ package body Vending_Machine is
    end Select_Product;
    ----------------------------------------------------
 
-   function Make_Change(Money : in Natural;
-                        Cost  : in Natural) return Natural is
+   function Make_Change (Money : in Natural;
+                         Cost  : in Natural) return Natural is
    begin
       return Money - Cost;
    end;
    ----------------------------------------------------
+
+   function Return_Coins (Money : in Natural;
+                          Cost  : in Natural)return Coin_Array is
+
+      Index         : Positive := 1;
+      Running_Total : Natural;
+      Coins         : Coin_Array(1..50);
+   begin
+      Running_Total := Make_Change(Money => Money,
+                                   Cost  => Cost);
+      loop
+
+         exit when Running_Total < 1;
+         if (Running_Total >= 25) then
+            Coins(Index) := Quarter;
+            Running_Total := Running_Total - 25;
+         end if;
+         Index := Index + 1;
+      end loop;
+      return Coins(1 .. Index - 1);
+   end Return_Coins;
 end Vending_Machine;
