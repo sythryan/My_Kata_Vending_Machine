@@ -8,13 +8,13 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vending_machine%b	vending_machine.adb	4f1f495f NE OO PK
+U vending_machine%b	vending_machine.adb	8128182d NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W interfaces%s		interfac.ads		interfac.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U vending_machine%s	vending_machine.ads	5e249c19 EE NE OO PK IL
+U vending_machine%s	vending_machine.ads	b9b9547a EE NE OO PK IL
 W ada.tags%s		a-tags.adb		a-tags.ali
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
@@ -45,37 +45,43 @@ D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
 D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
-D vending_machine.ads	20150504002010 5e249c19 vending_machine%s
-D vending_machine.adb	20150504002020 29562092 vending_machine%b
+D vending_machine.ads	20150505023822 b9b9547a vending_machine%s
+D vending_machine.adb	20150505024308 00fcb983 vending_machine%b
 X 1 ada.ads
 16K9*Ada 19e8 30|1r6
 X 7 a-textio.ads
 49K13*Text_IO 471e16 30|1w10
 X 29 vending_machine.ads
-5K9*vending_machine 27l5 27e20 30|5b14 54l5 54t20
+5K9*vending_machine 32E4 36l5 36e20 30|5b14 75l8 75t23
 7E9*Coin_Type 7e52 8r51 11r36 30|7r36
 7n23*Penny{7E9} 30|9r22
-7n30*Nickel{7E9}
-7n38*Dime{7E9}
-7n44*Quarter{7E9} 30|47r29
-8A9*Coin_Array(7E9)<integer> 24r54 30|35r53 39r23
-9E9*Product_Type 9e45 14r42 30|13r42
-9n26*Cola{9E9} 30|17r12
-9n32*Chips{9E9} 30|19r12
-9n39*Candy{9E9} 30|21r12
+7n30*Nickel{7E9} 30|55r29
+7n38*Dime{7E9} 30|52r29
+7n44*Quarter{7E9} 30|49r29
+8A9*Coin_Array(7E9)<integer> 25r54 30|38r53 42r23
+9E9*Product_Type 9e45 14r42 29r36 30|13r42 64r36
+9n26*Cola{9E9} 30|17r12 67r12
+9n32*Chips{9E9} 30|20r12 69r12
+9n39*Candy{9E9} 30|23r12 71r12
 11V13*Accept_Coin{boolean} 11>26 30|7b13 10l8 10t19
 11e26 Coin{7E9} 30|7b26 9r14
-14V13*Select_Product{boolean} 14>29 15>29 30|13b13 24l8 24t22
+14V13*Select_Product{boolean} 14>29 15>29 30|13b13 27l8 27t22
 14e29 Product{9E9} 30|13b29 16r12
-15i29 Money{natural} 30|14b29 18r17 20r17 22r17
-18V13*Make_Change{natural} 18>26 19>26 30|27b13 31t7 41s24
-18i26 Money{natural} 30|27b26 30r14 41r36
-19i26 Cost{natural} 30|28b26 30r22 42r36
-23V13*Return_Coins{8A9} 23>27 24>27 30|34b13 53l8 53t20
-23i27 Money{natural} 30|34b27 41r45
-24i27 Cost{natural} 30|35b27 42r45
+15i29 Money{natural} 30|14b29 19r17 22r17 25r17
+19V13*Make_Change{natural} 19>26 20>26 30|30b13 34t7 44s24
+19i26 Money{natural} 30|30b26 33r14 44r36
+20i26 Cost{natural} 30|31b26 33r22 45r36
+24V13*Return_Coins{8A9} 24>27 25>27 30|37b13 61l8 61t20
+24i27 Money{natural} 30|37b27 44r45
+25i27 Cost{natural} 30|38b27 45r45
+29V13*Sold_Out{boolean} 29>23 30|64b13 74l8 74t16
+29e23 Product{9E9} 30|64b23 66r12
+32i4 Chips_In_Stock{integer} 30|21m10 21r28 70r17
+33i4 Cola_In_Stock{integer} 30|18m10 18r27 68r17
+34i4 Candy_In_Stock{integer} 30|24m10 24r28 72r17
 X 30 vending_machine.adb
-37i7 Index{positive} 47r19 50m10 50r19 52r25
-38i7 Running_Total{natural} 41m7 45r20 46r14 48m13 48r30
-39a7 Coins{29|8A9} 47m13 52r14
+40i7 Index{positive} 49r19 52r19 55r19 58m10 58r19 60r25
+41i7 Running_Total{natural} 44m7 47r20 48r14 50m13 50r30 51r17 53m13 53r30
+. 56m13 56r30
+42a7 Coins{29|8A9} 49m13 52m13 55m13 60r14
 

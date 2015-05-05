@@ -15,10 +15,13 @@ package body Vending_Machine is
    begin
       case Product is
       when Cola =>
+         Cola_In_Stock := Cola_In_Stock - 1;
          return Money >= 100; -- $1.00
       when Chips =>
+         Chips_In_Stock := Chips_In_Stock - 1;
          return Money >= 50;  -- $0.50
       when Candy =>
+         Candy_In_Stock := Candy_In_Stock - 1;
          return Money >= 65;  -- $0.65
       end case;
    end Select_Product;
@@ -41,14 +44,32 @@ package body Vending_Machine is
       Running_Total := Make_Change(Money => Money,
                                    Cost  => Cost);
       loop
-
          exit when Running_Total < 1;
          if (Running_Total >= 25) then
             Coins(Index) := Quarter;
             Running_Total := Running_Total - 25;
+         elsif (Running_Total >= 10) then
+            Coins(Index) := Dime;
+            Running_Total := Running_Total - 10;
+         else
+            Coins(Index) := Nickel;
+            Running_Total := Running_Total - 5;
          end if;
          Index := Index + 1;
       end loop;
       return Coins(1 .. Index - 1);
    end Return_Coins;
-end Vending_Machine;
+   ----------------------------------------------------
+
+   function Sold_Out (Product : in Product_Type) return Boolean is
+   begin
+      case Product is
+      when Cola =>
+         return Cola_In_Stock = 0;
+      when Chips =>
+         return Chips_In_Stock = 0;
+      when Candy =>
+         return Candy_In_Stock = 0;
+      end case;
+   end Sold_Out;
+   end Vending_Machine;

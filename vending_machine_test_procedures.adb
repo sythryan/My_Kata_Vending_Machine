@@ -3,7 +3,8 @@ with Ada.Text_IO; use Ada.Text_IO;
 -- Author : Syth Ryan
 package body Vending_Machine_Test_Procedures is
 
-   Four_Quarters : constant Coin_Array(1..4) := (Quarter,Quarter,Quarter,Quarter);
+   Four_Quarters          : constant Coin_Array(1..4) := (Quarter,Quarter,Quarter,Quarter);
+   One_Quarter_One_Nickel : constant Coin_Array(1..2) := (Quarter,Nickel);
 
    procedure passAPennyToAcceptCoinShouldReturnFalse is
 
@@ -96,7 +97,6 @@ package body Vending_Machine_Test_Procedures is
    end passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100;
    ------------------------------------------------------
 
-
    procedure passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters is
    begin
       if (Return_Coins(Money =>100, Cost=>0) = Four_Quarters) then
@@ -105,5 +105,24 @@ package body Vending_Machine_Test_Procedures is
          Put_Line("- FAILD: passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters");
       end if;
    end passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters;
+   ------------------------------------------------------
+
+   procedure passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel is
+   begin
+      if (Return_Coins(Money => 100, Cost => 60) = One_Quarter_One_Nickel) then
+         Put_Line("+ PASSED: passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel");
+      else
+         Put_Line("- FAILD: passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel");
+      end if;
+   end passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel;
+
+   procedure passCandyToSoldOutShouldReturnFalse is
+   begin
+      if (Sold_Out(Product => Candy) = False) then
+         Put_Line("+ PASSED: passCandyToSoldOutShouldReturnFalse");
+      else
+         Put_Line("- FAILD: passCandyToSoldOutShouldReturnFalse");
+      end if;
+   end passCandyToSoldOutShouldReturnFalse;
 
 end Vending_Machine_Test_Procedures;

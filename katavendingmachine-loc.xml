@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>C:\Users\Syth\Documents\GitHub\My_Kata_Vending_Machine\katavendingmachine.gpr</vfs_file>
+  <Project >
     <file_marker column=" 1" line=" 1" >
       <vfs_file>C:\Users\Syth\Documents\GitHub\My_Kata_Vending_Machine\vending_machine_test.adb</vfs_file>
     </file_marker>
@@ -17,14 +16,17 @@
     <file_marker column=" 1" line=" 1" >
       <vfs_file>C:\Users\Syth\Documents\GitHub\My_Kata_Vending_Machine\vending_machine_test_procedures.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 42" line=" 29" >
+    <file_marker column=" 42" line=" 32" >
       <vfs_file>C:\Users\Syth\Documents\GitHub\My_Kata_Vending_Machine\vending_machine_test_procedures.adb</vfs_file>
     </file_marker>
-    <file_marker column=" 29" line=" 12" >
+    <file_marker column=" 29" line=" 15" >
       <vfs_file>C:\Users\Syth\Documents\GitHub\My_Kata_Vending_Machine\vending_machine.ads</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 1" >
+    <file_marker column=" 1" line=" 1" >
       <vfs_file>C:\Users\Syth\Documents\GitHub\My_Kata_Vending_Machine\vending_machine_test_procedures.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_file>C:\Users\Syth\Documents\GitHub\My_Kata_Vending_Machine\vending_machine.ads</vfs_file>
     </file_marker>
   </Project>
   <Project >

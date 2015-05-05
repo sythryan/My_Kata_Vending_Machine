@@ -8,14 +8,14 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vending_machine_test_procedures%b  vending_machine_test_procedures.adb  e815cadc NE OO PK
+U vending_machine_test_procedures%b  vending_machine_test_procedures.adb  0c2acaac NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W vending_machine%s	vending_machine.adb	vending_machine.ali
 
-U vending_machine_test_procedures%s  vending_machine_test_procedures.ads  edb23d58 EE NE OO PK
+U vending_machine_test_procedures%s  vending_machine_test_procedures.ads  00c623e1 EE NE OO PK
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
 D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
@@ -45,52 +45,60 @@ D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
 D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
-D vending_machine.ads	20150504002010 5e249c19 vending_machine%s
-D vending_machine_test_procedures.ads  20150503233452 edb23d58 vending_machine_test_procedures%s
-D vending_machine_test_procedures.adb  20150504002002 63ee9e49 vending_machine_test_procedures%b
+D vending_machine.ads	20150505023822 b9b9547a vending_machine%s
+D vending_machine_test_procedures.ads  20150505024014 00c623e1 vending_machine_test_procedures%s
+D vending_machine_test_procedures.adb  20150505024112 8d3848e3 vending_machine_test_procedures%b
 X 1 ada.ads
 16K9*Ada 19e8 31|2r6 2r23
 X 7 a-textio.ads
 49K13*Text_IO 471e16 31|2w10 2r27
-263U14*Put_Line 31|12s10 14s10 22s10 24s10 32s10 34s10 42s10 44s10 52s10
-. 54s10 62s10 64s10 72s10 74s10 82s10 84s10 92s10 94s10 103s10 105s10
+263U14*Put_Line 31|13s10 15s10 23s10 25s10 33s10 35s10 43s10 45s10 53s10
+. 55s10 63s10 65s10 73s10 75s10 83s10 85s10 93s10 95s10 103s10 105s10 113s10
+. 115s10 122s10 124s10
 X 29 vending_machine.ads
-5K9*vending_machine 27e20 31|1w6 1r27 21r11 21r39
-7n23*Penny{7E9} 31|11r27
-7n30*Nickel{7E9} 31|21r55
-7n44*Quarter{7E9} 31|6r50 6r58 6r66 6r74
-8A9*Coin_Array(7E9)<integer> 31|6r29
-9n26*Cola{9E9} 31|31r37 41r41
-9n32*Chips{9E9} 31|51r37 61r41 71r37 81r41
-11V13*Accept_Coin{boolean} 31|11s15 21s27
-14V13*Select_Product{boolean} 31|31s11 41s15 51s11 61s15 71s11 81s15
-14e29 Product{9E9} 31|31r26 41r30 51r26 61r30 71r26 81r30
-15i29 Money{natural} 31|31r43 41r47 51r44 61r48 71r44 81r48
-18V13*Make_Change{natural} 31|91s11
-18i26 Money{natural} 31|91r23
-19i26 Cost{natural} 31|91r36
-23V13*Return_Coins{8A9} 31|102s11
-23i27 Money{natural} 31|102r24
-24i27 Cost{natural} 31|102r37
+5K9*vending_machine 36e20 31|1w6 1r27 22r11 22r39
+7n23*Penny{7E9} 31|12r27
+7n30*Nickel{7E9} 31|7r67 22r55
+7n44*Quarter{7E9} 31|6r59 6r67 6r75 6r83 7r59
+8A9*Coin_Array(7E9)<integer> 31|6r38 7r38
+9n26*Cola{9E9} 31|32r37 42r41
+9n32*Chips{9E9} 31|52r37 62r41 72r37 82r41
+9n39*Candy{9E9} 31|121r31
+11V13*Accept_Coin{boolean} 31|12s15 22s27
+14V13*Select_Product{boolean} 31|32s11 42s15 52s11 62s15 72s11 82s15
+14e29 Product{9E9} 31|32r26 42r30 52r26 62r30 72r26 82r30
+15i29 Money{natural} 31|32r43 42r47 52r44 62r48 72r44 82r48
+19V13*Make_Change{natural} 31|92s11
+19i26 Money{natural} 31|92r23
+20i26 Cost{natural} 31|92r36
+24V13*Return_Coins{8A9} 31|102s11 112s11
+24i27 Money{natural} 31|102r24 112r24
+25i27 Cost{natural} 31|102r37 112r38
+29V13*Sold_Out{boolean} 31|121s11
+29e23 Product{9E9} 31|121r20
 X 30 vending_machine_test_procedures.ads
-3K9*Vending_Machine_Test_Procedures 27l5 27e36 31|4b14 109l5 109t36
-8U14*passAPennyToAcceptCoinShouldReturnFalse 31|8b14 16l8 16t47
-9U14*passANickelToAcceptCoinShouldReturnTrue 31|19b14 26l8 26t47
-12U14*passOneDollarAndColaToSelectProductShouldReturnTrue 31|29b14 36l8 36t59
-13U14*passFiveCentsAndColaToSelectProductShouldReturnFalse 31|39b14 46l8
-. 46t60
-15U14*passFiftyCentsAndChipsToSelectProductShouldReturnTrue 31|49b14 56l8
-. 56t61
-16U14*passTenCentsAndChipsToSelectProductShouldReturnFalse 31|59b14 66l8
-. 66t60
-18U14*passOneDollarAndCandyToSelectProductShouldReturnTrue 31|69b14 76l8
-. 76t60
-19U14*passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse 31|79b14
-. 86l8 86t67
-22U14*passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100 31|89b14
-. 96l8 96t65
+3K9*Vending_Machine_Test_Procedures 31l5 31e36 31|4b14 128l5 128t36
+8U14*passAPennyToAcceptCoinShouldReturnFalse 31|9b14 17l8 17t47
+9U14*passANickelToAcceptCoinShouldReturnTrue 31|20b14 27l8 27t47
+12U14*passOneDollarAndColaToSelectProductShouldReturnTrue 31|30b14 37l8 37t59
+13U14*passFiveCentsAndColaToSelectProductShouldReturnFalse 31|40b14 47l8
+. 47t60
+15U14*passFiftyCentsAndChipsToSelectProductShouldReturnTrue 31|50b14 57l8
+. 57t61
+16U14*passTenCentsAndChipsToSelectProductShouldReturnFalse 31|60b14 67l8
+. 67t60
+18U14*passOneDollarAndCandyToSelectProductShouldReturnTrue 31|70b14 77l8
+. 77t60
+19U14*passTwentyFiveCentsAndCandyToSelectProductShouldReturnFalse 31|80b14
+. 87l8 87t67
+22U14*passTwoDollarsAndOneDollarCostToMakeChangeShouldReturn100 31|90b14
+. 97l8 97t65
 25U14*passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters 31|100b14
 . 107l8 107t66
+26U14*passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel 31|110b14
+. 117l8 117t73
+29U14*passCandyToSoldOutShouldReturnFalse 31|119b14 126l8 126t43
 X 31 vending_machine_test_procedures.adb
 6a4 Four_Quarters{29|8A9} 102r48
+7a4 One_Quarter_One_Nickel{29|8A9} 112r52
 

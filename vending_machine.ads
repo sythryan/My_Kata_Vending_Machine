@@ -14,14 +14,23 @@ package vending_machine is
    function Select_Product (Product : in Product_Type;
                             Money   : in Natural) return Boolean;
    -- Returns Whether Product Was Purchased
+   -- Assumptions: Product is not out of Stock
 
    function Make_Change (Money : in Natural;
                          Cost  : in Natural) return Natural;
    -- Returns change difference
-   -- Will Throw an unhandled error if Cost is greater than Money
+   -- May Throw an unhandled error if Cost is greater than Money
 
    function Return_Coins (Money : in Natural;
                           Cost  : in Natural) return Coin_Array;
    -- Returns an array of coins to be returned to the user
+   -- May Throw an unhandled error if Cost is greater than Money
+
+   function Sold_Out (Product : in Product_Type) return Boolean;
+   -- Returns a Boolean, True if a Product is sold out.
+private
+   Chips_In_Stock : Integer := 0;
+   Cola_In_Stock  : Integer := 3;
+   Candy_In_Stock : Integer := 2;
 
 end vending_machine;

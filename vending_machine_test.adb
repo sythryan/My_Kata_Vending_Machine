@@ -22,4 +22,8 @@ begin
 
    -- Return Coins
    passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters;
+   passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel;
+
+   -- Sold Out
+   passCandyToSoldOutShouldReturnFalse;
 end Vending_Machine_Test;
