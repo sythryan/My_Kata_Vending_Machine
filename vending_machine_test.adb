@@ -22,7 +22,7 @@ begin
 
    -- Return Coins
    passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters;
-   passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel;
+   passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Dime1Nickel;
 
    -- Sold Out
    passCandyToSoldOutShouldReturnFalse;

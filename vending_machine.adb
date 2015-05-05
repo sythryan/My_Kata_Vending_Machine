@@ -47,20 +47,15 @@ package body Vending_Machine is
 
       loop
          exit when Running_Total < 1;
-         Ada.Integer_Text_IO.Put(Running_Total, 1);
-         Ada.Text_IO.New_Line;
          if (Running_Total >= 25) then
             Coins(Index) := Quarter;
             Running_Total := Running_Total - 25;
-            Ada.Text_IO.Put_Line("Quarter");
          elsif (Running_Total >= 10) then
             Coins(Index) := Dime;
             Running_Total := Running_Total - 10;
-            Ada.Text_IO.Put_Line("Dime");
          else
             Coins(Index) := Nickel;
             Running_Total := Running_Total - 5;
-            Ada.Text_IO.Put_Line("Nickel");
          end if;
          Index := Index + 1;
       end loop;

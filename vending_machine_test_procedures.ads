@@ -23,7 +23,7 @@ package Vending_Machine_Test_Procedures is
 
    -- Return Coins
    procedure passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters;
-   procedure passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel;
+   procedure passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Dime1Nickel;
 
    -- Sold Out
    procedure passCandyToSoldOutShouldReturnFalse;

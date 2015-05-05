@@ -8,14 +8,14 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vending_machine_test_procedures%b  vending_machine_test_procedures.adb  0c2acaac NE OO PK
+U vending_machine_test_procedures%b  vending_machine_test_procedures.adb  438d37d2 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W vending_machine%s	vending_machine.adb	vending_machine.ali
 
-U vending_machine_test_procedures%s  vending_machine_test_procedures.ads  00c623e1 EE NE OO PK
+U vending_machine_test_procedures%s  vending_machine_test_procedures.ads  af6b3f7b EE NE OO PK
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
 D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
@@ -46,8 +46,8 @@ D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
 D vending_machine.ads	20150505023822 b9b9547a vending_machine%s
-D vending_machine_test_procedures.ads  20150505024014 00c623e1 vending_machine_test_procedures%s
-D vending_machine_test_procedures.adb  20150505024112 8d3848e3 vending_machine_test_procedures%b
+D vending_machine_test_procedures.ads  20150505025430 af6b3f7b vending_machine_test_procedures%s
+D vending_machine_test_procedures.adb  20150505025448 6d32a907 vending_machine_test_procedures%b
 X 1 ada.ads
 16K9*Ada 19e8 31|2r6 2r23
 X 7 a-textio.ads
@@ -58,9 +58,10 @@ X 7 a-textio.ads
 X 29 vending_machine.ads
 5K9*vending_machine 36e20 31|1w6 1r27 22r11 22r39
 7n23*Penny{7E9} 31|12r27
-7n30*Nickel{7E9} 31|7r67 22r55
-7n44*Quarter{7E9} 31|6r59 6r67 6r75 6r83 7r59
-8A9*Coin_Array(7E9)<integer> 31|6r38 7r38
+7n30*Nickel{7E9} 31|7r81 22r55
+7n38*Dime{7E9} 31|7r76
+7n44*Quarter{7E9} 31|6r59 6r67 6r75 6r83 7r68
+8A9*Coin_Array(7E9)<integer> 31|6r38 7r47
 9n26*Cola{9E9} 31|32r37 42r41
 9n32*Chips{9E9} 31|52r37 62r41 72r37 82r41
 9n39*Candy{9E9} 31|121r31
@@ -95,10 +96,10 @@ X 30 vending_machine_test_procedures.ads
 . 97l8 97t65
 25U14*passOneDollarAndZeroCostToReturnCoinsShouldReturn4Quarters 31|100b14
 . 107l8 107t66
-26U14*passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Nickel 31|110b14
-. 117l8 117t73
+26U14*passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Dime1Nickel
+. 31|110b14 117l8 117t78
 29U14*passCandyToSoldOutShouldReturnFalse 31|119b14 126l8 126t43
 X 31 vending_machine_test_procedures.adb
 6a4 Four_Quarters{29|8A9} 102r48
-7a4 One_Quarter_One_Nickel{29|8A9} 112r52
+7a4 One_Quarter_One_Dime_One_Nickel{29|8A9} 112r52
 
