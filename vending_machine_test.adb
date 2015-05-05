@@ -26,4 +26,7 @@ begin
 
    -- Sold Out
    passCandyToSoldOutShouldReturnFalse;
+
+   -- Exact Change Only
+   callingExactChangeOnlyShouldReturnFalse;
 end Vending_Machine_Test;

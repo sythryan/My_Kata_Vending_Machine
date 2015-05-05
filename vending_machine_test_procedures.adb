@@ -115,6 +115,7 @@ package body Vending_Machine_Test_Procedures is
          Put_Line("- FAILD: passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Dime1Nickel");
       end if;
    end passOneDollarAndSixtyCostToReturnCoinsShouldReturn1Quarter1Dime1Nickel;
+   ------------------------------------------------------
 
    procedure passCandyToSoldOutShouldReturnFalse is
    begin
@@ -124,5 +125,15 @@ package body Vending_Machine_Test_Procedures is
          Put_Line("- FAILD: passCandyToSoldOutShouldReturnFalse");
       end if;
    end passCandyToSoldOutShouldReturnFalse;
+   ------------------------------------------------------
+
+   procedure callingExactChangeOnlyShouldReturnFalse is
+   begin
+      if (Sold_Out(Product => Candy) = False) then
+         Put_Line("+ PASSED: callingExactChangeOnlyShouldReturnFalse");
+      else
+         Put_Line("- FAILD: callingExactChangeOnlyShouldReturnFalse");
+      end if;
+   end callingExactChangeOnlyShouldReturnFalse;
 
 end Vending_Machine_Test_Procedures;

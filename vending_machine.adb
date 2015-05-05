@@ -74,4 +74,10 @@ package body Vending_Machine is
          return Candy_In_Stock < 1;
       end case;
    end Sold_Out;
-   end Vending_Machine;
+   ----------------------------------------------------
+
+   function Exact_Change_Only return Boolean is
+   begin
+      return (Quarter_Amount < 1) or (Dime_Amount < 1) or (Nickel_Amount < 1);
+   end Exact_Change_Only;
+end Vending_Machine;

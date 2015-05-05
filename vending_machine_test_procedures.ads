@@ -28,4 +28,7 @@ package Vending_Machine_Test_Procedures is
    -- Sold Out
    procedure passCandyToSoldOutShouldReturnFalse;
 
+   -- Exact Change Only
+   procedure callingExactChangeOnlyShouldReturnFalse;
+
 end Vending_Machine_Test_Procedures;

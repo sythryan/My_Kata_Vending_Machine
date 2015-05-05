@@ -28,9 +28,16 @@ package vending_machine is
 
    function Sold_Out (Product : in Product_Type) return Boolean;
    -- Returns a Boolean, True if a Product is sold out.
+
+   function Exact_Change_Only return Boolean;
+   -- Returns True if Exact Change must be used;
 private
    Chips_In_Stock : Integer := 0;
    Cola_In_Stock  : Integer := 3;
    Candy_In_Stock : Integer := 2;
+
+   Quarter_Amount : Integer := 50;
+   Dime_Amount    : Integer := 43;
+   Nickel_Amount  : Integer := 30;
 
 end vending_machine;

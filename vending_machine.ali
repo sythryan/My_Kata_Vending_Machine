@@ -3,19 +3,20 @@ A -gnatA
 P SS ZX
 
 RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_IO
 RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U vending_machine%b	vending_machine.adb	3cad24fa NE OO PK
+U vending_machine%b	vending_machine.adb	05bac0a0 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W interfaces%s		interfac.ads		interfac.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
-U vending_machine%s	vending_machine.ads	b9b9547a EE NE OO PK IL
+U vending_machine%s	vending_machine.ads	d37cfb66 EE NE OO PK IL
 W ada.tags%s		a-tags.adb		a-tags.ali
 
 D ada.ads		20140406181354 3ffc8e18 ada%s
@@ -48,8 +49,8 @@ D s-stopoo.ads		20140406181356 b16154c2 system.storage_pools%s
 D s-traent.ads		20140406181354 b5116092 system.traceback_entries%s
 D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
 D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
-D vending_machine.ads	20150505023822 b9b9547a vending_machine%s
-D vending_machine.adb	20150505025512 4b320cf0 vending_machine%b
+D vending_machine.ads	20150505025950 d37cfb66 vending_machine%s
+D vending_machine.adb	20150505030106 18e047b6 vending_machine%b
 X 1 ada.ads
 16K9*Ada 19e8 32|1r6 2r6
 X 4 a-inteio.ads
@@ -57,7 +58,7 @@ X 4 a-inteio.ads
 X 8 a-textio.ads
 49K13*Text_IO 471e16 32|1w10
 X 31 vending_machine.ads
-5K9*vending_machine 32E4 36l5 36e20 32|6b14 77l8 77t23
+5K9*vending_machine 35E4 43l5 43e20 32|6b14 83l5 83t20
 7E9*Coin_Type 7e52 8r51 11r36 32|8r36
 7n23*Penny{7E9} 32|10r22
 7n30*Nickel{7E9} 32|57r29
@@ -81,9 +82,13 @@ X 31 vending_machine.ads
 25i27 Cost{natural} 32|39b27 46r45
 29V13*Sold_Out{boolean} 29>23 32|66b13 76l8 76t16
 29e23 Product{9E9} 32|66b23 68r12
-32i4 Chips_In_Stock{integer} 32|22m10 22r28 72r17
-33i4 Cola_In_Stock{integer} 32|19m10 19r27 70r17
-34i4 Candy_In_Stock{integer} 32|25m10 25r28 74r17
+32V13*Exact_Change_Only{boolean} 32|79b13 82l8 82t25
+35i4 Chips_In_Stock{integer} 32|22m10 22r28 72r17
+36i4 Cola_In_Stock{integer} 32|19m10 19r27 70r17
+37i4 Candy_In_Stock{integer} 32|25m10 25r28 74r17
+39i4 Quarter_Amount{integer} 32|81r15
+40i4 Dime_Amount{integer} 32|81r39
+41i4 Nickel_Amount{integer} 32|81r60
 X 32 vending_machine.adb
 41i7 Index{positive} 51r19 54r19 57r19 60m10 60r19 62r25
 42i7 Running_Total{natural} 45m7 49r20 50r14 52m13 52r30 53r17 55m13 55r30
