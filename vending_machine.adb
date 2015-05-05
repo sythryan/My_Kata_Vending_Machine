@@ -1,4 +1,5 @@
 with Ada.Text_IO;
+with Ada.Integer_Text_IO;
 -- Author : Syth Ryan
 
 -- Personal Note: Cents are not decimal, $1.00 equals an Integer of 100
@@ -43,17 +44,23 @@ package body Vending_Machine is
    begin
       Running_Total := Make_Change(Money => Money,
                                    Cost  => Cost);
+
       loop
          exit when Running_Total < 1;
+         Ada.Integer_Text_IO.Put(Running_Total, 1);
+         Ada.Text_IO.New_Line;
          if (Running_Total >= 25) then
             Coins(Index) := Quarter;
             Running_Total := Running_Total - 25;
+            Ada.Text_IO.Put_Line("Quarter");
          elsif (Running_Total >= 10) then
             Coins(Index) := Dime;
             Running_Total := Running_Total - 10;
+            Ada.Text_IO.Put_Line("Dime");
          else
             Coins(Index) := Nickel;
             Running_Total := Running_Total - 5;
+            Ada.Text_IO.Put_Line("Nickel");
          end if;
          Index := Index + 1;
       end loop;
@@ -65,11 +72,11 @@ package body Vending_Machine is
    begin
       case Product is
       when Cola =>
-         return Cola_In_Stock = 0;
+         return Cola_In_Stock < 1;
       when Chips =>
-         return Chips_In_Stock = 0;
+         return Chips_In_Stock < 1;
       when Candy =>
-         return Candy_In_Stock = 0;
+         return Candy_In_Stock < 1;
       end case;
    end Sold_Out;
    end Vending_Machine;
